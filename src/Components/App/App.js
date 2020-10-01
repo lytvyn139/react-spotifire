@@ -20,6 +20,7 @@ class App extends React.Component {
     this.search = this.search.bind(this);
   }
 
+
   addTrack(track) {
     let tracks = this.state.playlistTracks;
     if (tracks.find(savedTrack => savedTrack.id === track.id)) {
@@ -56,7 +57,7 @@ class App extends React.Component {
       this.setState( {searchResults: searchResults} )
     });
   }
- 
+
   render() {
     
     return (
